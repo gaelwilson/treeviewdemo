@@ -1,0 +1,46 @@
+{
+  "name": "treeview-checkbox-demo",
+  "displayName": "treeview-checkbox-demo",
+  "description": "Demo of manually managed checkbox items",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.95.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "checkboxTestView",
+          "title": "Checkbox Test",
+          "icon": "$(list-tree)"
+        }
+      ]
+    },
+    "views": {
+      "checkboxTestView": [
+        {
+          "id": "checkboxTest",
+          "name": "Checkbox Test",
+          "icon": "$(list-tree)"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.10",
+    "@types/vscode": "^1.95.0",
+    "@typescript-eslint/eslint-plugin": "^6.7.3",
+    "@typescript-eslint/parser": "^6.7.3",
+    "eslint": "^8.50.0",
+    "typescript": "^5.2.2"
+  }
+}

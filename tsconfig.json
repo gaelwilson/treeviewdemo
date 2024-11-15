@@ -1,0 +1,26 @@
+{
+	"compilerOptions": {
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"target": "es6",
+		"outDir": "out",
+		"lib": [
+			"es6"
+		],
+		"sourceMap": true,
+		"rootDir": "src",
+		"baseUrl": ".",
+		"paths": {
+		   "vscode": ["node_modules/@types/vscode"]
+		},
+		"strict": true,  /* enable all strict type-checking options */
+		"removeComments": true,
+		"strictNullChecks": true,
+		"useUnknownInCatchVariables": false
+	},
+	"exclude": [
+		"node_modules",
+		"icons",
+		".vscode-test"
+	]
+}
