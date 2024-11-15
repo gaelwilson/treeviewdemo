@@ -43,8 +43,8 @@ export function activate(context: vscode.ExtensionContext) {
     if (e.items.length === 0) {
       console.log("No items have been included in onDidChangeCheckboxState.");
     }
-    for (const [item, state] of e.items) {
-      const state = item.checkboxState === vscode.TreeItemCheckboxState.Checked ? "checked" : "unchecked";
+    for (const [item, checkboxState] of e.items) {
+      const state = checkboxState === vscode.TreeItemCheckboxState.Checked ? "checked" : "unchecked";
       console.log(`Changed ${item.label} to ${state}`);
     }
     // Manually check the checkbox state of each of the items in the tree.
